@@ -44,10 +44,10 @@ class PopulateLoci extends Component{
         {
           this.props.loci.map((locus, idx) =>{
             return(
-              <div key={locus.id} className='form-group'>
+              <span key={locus.id} className='form-group'>
                 <label htmlFor={"value-for-" + locus.locusName}>What is at {locus.locusName }?</label>
                 <input onChange={ this.updateLocusValue } value={locus.locusValue } data-locus-id={locus.id} type='text' className='form-control' id={"value-for-" + locus.locusName } />
-              </div>
+              </span>
             )
           })
         }

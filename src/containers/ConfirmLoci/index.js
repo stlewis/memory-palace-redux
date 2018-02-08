@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { bindActionCreators } from'redux';
 
 import './styles.css';
 
-class  ConfirmLoci extends Component{
+class ConfirmLoci extends Component{
 
   constructor(props){
     super(props)
@@ -28,9 +27,9 @@ class  ConfirmLoci extends Component{
           {
             this.props.loci.map((locus, idx) => {
               return(
-                <div>
-                  {locus.locusValue} is at {locus.locusName }.
-                </div>
+                <span key={locus.id}>
+                  {locus.locusValue} is at {locus.locusName }.<br />
+                </span>
               )
             })
           }

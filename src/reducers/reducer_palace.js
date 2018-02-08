@@ -11,9 +11,7 @@ export default function(state = defaultState, {type, payload}){
     case ACTION_TYPES.ADD_PALACE_NAME:
       newState['palaceName'] = payload.palaceName
       return newState;
-    break;
     default:
       return state;
-    break;
   }
 }

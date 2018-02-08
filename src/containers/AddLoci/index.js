@@ -53,7 +53,7 @@ class AddLoci extends Component{
   handleAddLoci(e){
     e.preventDefault();
     let currentLoci = [...this.state.loci]
-    currentLoci.push({locusName: this.state.currentLocus, locusValue: null, id: this.state.currentLocus + Date.now() })
+    currentLoci.push({locusName: this.state.currentLocus, locusValue: undefined, id: this.state.currentLocus + Date.now() })
     
     this.setState({currentLocus: '', loci: currentLoci });
     e.target.focus();

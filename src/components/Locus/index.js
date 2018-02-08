@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.css';
 
 export default function Locus(props){
-  const { locusName, ...rest } = props
+  const { locusName } = props
 
   return(
     <div id={ props.id } className='locusContainer'>

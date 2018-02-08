@@ -6,7 +6,7 @@ import StartPalace from '../../containers/StartPalace';
 import AddLoci from '../../containers/AddLoci';
 import PopulateLoci from '../../containers/PopulateLoci';
 import ConfirmLoci from '../../containers/ConfirmLoci';
-import MemoryTest from '../../components/MemoryTest';
+import MemoryTest from '../../containers/MemoryTest';
 
 import './styles.css';
 
