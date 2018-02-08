@@ -1,0 +1,11 @@
+.locusContainer{
+  margin-bottom: 10px;
+  padding: 5px;
+  cursor: move;
+  border: 2px dashed #000;
+}
+
+.delete-loci{
+  color: red;
+  cursor: pointer;
+}
