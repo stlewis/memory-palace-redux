@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 export default function(){
   return(
     <div>
-        <h1>Memory Palace Trainer</h1>
         <p>
           Welcome to the Memory Palace Trainer. This application will help you master the
           Memory Palace memorization technique by helping you to construct and visualize your

@@ -31,7 +31,6 @@ class PopulateLoci extends Component{
   render(){
     return(
       <div>
-        <h2>Populate { this.props.palaceName }</h2> 
         <p>
           Now that you've decided what your loci are, and what order they appear in,
           the next step is to fill up each loci with an item you'd like to remember.
@@ -51,7 +50,7 @@ class PopulateLoci extends Component{
             )
           })
         }
-        <div>
+        <div style={{marginTop: '30px'}}>
           <button onClick={ this.handleFinishLoci } className='btn btn-success btn-lg btn-block'>Continue</button>
         </div>
       </div>

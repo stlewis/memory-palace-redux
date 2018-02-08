@@ -11,6 +11,8 @@ class AddLoci extends Component{
   
   constructor(props){
     super(props);
+
+    this.palaceName = this.props.palaceName ? this.props.palaceName : 'Your Palace';
     
     this.drake = null;
     this.state = {currentLocus: '', loci: this.props.loci }
@@ -82,10 +84,8 @@ class AddLoci extends Component{
   render(){
     return(
       <div>
-        <h2>Loci For {this.props.palaceName}</h2>
-        
         <p>
-          Please enter a descriptive name for each of the loci in your palace. To find out more
+          Please enter a descriptive name for each of the loci in { this.palaceName }. To find out more
           about what loci are, please <a href=''>read the help article</a>.
         </p>
         

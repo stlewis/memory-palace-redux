@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux'
 
 import './styles.css';
 
 class MemoryTest extends Component{
-  
   constructor(props){
     super(props);
     this.state = { 
@@ -57,6 +57,7 @@ class MemoryTest extends Component{
           <h2>Congratulations!</h2>
           <p>
             You remembered everything!
+            <Link to='/' className='btn btn-success btn-block btn-lg'>Start Over!</Link>
           </p>
         </div>
       ); 

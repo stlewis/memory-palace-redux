@@ -26,11 +26,10 @@ class StartPalace extends Component{
   render(){
     return(
       <div>
-        <h2>Name Your Palace</h2> 
         <p>
-          It's possible, (even likely), that you're going to want more than one 
-          memory palace. With that in mind, give this one a unique name so that you
-          can refer back to it later.
+          What should we call your palace? Right now it doesn't matter much, but in the future
+          it will be possible to save multiple palaces and come back to train in one's you've previously created,
+          so it's important to have a unique name you can refer to.
         </p>
         <form name='namePalace' onSubmit={ this.setPalaceName }>
           <input value={this.state.palaceName} onChange={this.updatePalaceName} className='form-control' type='text' id='palace-name' name='palace_name' placeholder='Palace Name' /><br />

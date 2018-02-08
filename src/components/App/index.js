@@ -13,7 +13,7 @@ import './styles.css';
 class App extends Component {
   render() {
     return (
-      <div>
+      <div id='wrap'>
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/start_palace/' component={ StartPalace } />
