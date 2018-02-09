@@ -1,2 +1,2 @@
-const baseURL = '';
+const baseURL = '/app';
 export { baseURL }

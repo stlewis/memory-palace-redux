@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux'
+import { baseURL } from '../../constants';
 
 import './styles.css';
 
@@ -57,7 +58,7 @@ class MemoryTest extends Component{
           <h2>Congratulations!</h2>
           <p>
             You remembered everything!
-            <Link to='/' className='btn btn-success btn-block btn-lg'>Start Over!</Link>
+            <Link to={baseURL + '/'} className='btn btn-success btn-block btn-lg'>Start Over!</Link>
           </p>
         </div>
       ); 
