@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { baseURL } from '../../constants';
 
 export default function(){
   return(
@@ -14,7 +15,7 @@ export default function(){
           If you're ready to get started, click the big green button below!
         </p> 
 
-        <Link className='btn btn-success btn-block btn-lg' to='/start_palace'>Start Palace</Link>
+        <Link className='btn btn-success btn-block btn-lg' to={baseURL + '/start_palace'}>Start Palace</Link>
     </div>
   );
 }

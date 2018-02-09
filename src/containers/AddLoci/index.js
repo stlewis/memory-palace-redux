@@ -4,6 +4,7 @@ import { bindActionCreators } from'redux';
 import { updateLoci } from '../../actions';
 import Locus  from '../../components/Locus';
 import Dragula from 'react-dragula';
+import { baseURL } from '../../constants';
 
 import './styles.css';
 
@@ -63,7 +64,7 @@ class AddLoci extends Component{
 
   handleFinishLoci(e){
     this.props.updateLoci(this.state.loci)
-    return this.props.history.push('/populate_loci');
+    return this.props.history.push(baseURL + '/populate_loci');
   }
 
   handleDeleteLoci(lociId){

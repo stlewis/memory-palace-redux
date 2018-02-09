@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { bindActionCreators } from'redux';
 import { updateLoci } from '../../actions';
+import { baseURL } from '../../constants';
 
 import './styles.css';
 
@@ -25,7 +26,7 @@ class PopulateLoci extends Component{
 
   handleFinishLoci(e){
     this.props.updateLoci(this.state.loci)
-    return this.props.history.push('/confirm_loci');
+    return this.props.history.push(baseURL + '/confirm_loci');
   }
 
   render(){

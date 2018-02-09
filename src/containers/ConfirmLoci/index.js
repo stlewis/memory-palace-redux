@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
+import { baseURL } from '../../constants';
 
 import './styles.css';
 
@@ -11,7 +12,7 @@ class ConfirmLoci extends Component{
   }
 
   handleStartClick(){
-    return this.props.history.push('/memory_test');
+    return this.props.history.push(baseURL + '/memory_test');
   }
 
   render(){

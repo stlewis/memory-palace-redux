@@ -12,4 +12,3 @@ let store = createStore(rootReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && wind
 
 ReactDOM.render(<Provider store={store}><Router><App /></Router></Provider>, 
   document.getElementById('root'));
-registerServiceWorker();

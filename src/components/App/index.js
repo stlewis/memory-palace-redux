@@ -7,6 +7,7 @@ import AddLoci from '../../containers/AddLoci';
 import PopulateLoci from '../../containers/PopulateLoci';
 import ConfirmLoci from '../../containers/ConfirmLoci';
 import MemoryTest from '../../containers/MemoryTest';
+import { baseURL } from '../../constants';
 
 import './styles.css';
 
@@ -15,12 +16,12 @@ class App extends Component {
     return (
       <div id='wrap'>
         <Switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/start_palace/' component={ StartPalace } />
-          <Route exact path='/add_loci/' component={ AddLoci } />
-          <Route exact path='/populate_loci/' component={ PopulateLoci } />
-          <Route exact path='/confirm_loci/' component={ ConfirmLoci } />
-          <Route exact path='/memory_test/' component={ MemoryTest } />
+          <Route exact path={ baseURL + '/' } component={Home} />
+          <Route exact path={ baseURL + '/start_palace/' } component={ StartPalace } />
+          <Route exact path={ baseURL + '/add_loci/' } component={ AddLoci } />
+          <Route exact path={ baseURL + '/populate_loci/' } component={ PopulateLoci } />
+          <Route exact path={ baseURL + '/confirm_loci/' } component={ ConfirmLoci } />
+          <Route exact path={ baseURL + '/memory_test/'  } component={ MemoryTest } />
         </Switch>
       </div>
     );

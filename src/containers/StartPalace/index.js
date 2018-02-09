@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { bindActionCreators } from'redux';
 import { addPalace } from '../../actions';
+import { baseURL } from '../../constants';
 
 class StartPalace extends Component{
 
@@ -20,7 +21,7 @@ class StartPalace extends Component{
   setPalaceName(e){
     e.preventDefault();
     this.props.addPalace(this.state.palaceName);
-    this.props.history.push('/add_loci');
+    this.props.history.push(baseURL + '/add_loci');
   }
 
   render(){
